@@ -1,0 +1,126 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+.sd78WebpartsV01 {
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+  padding-bottom: 10px;
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+}
+
+.navbar {
+  background-color: #007AC3;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+.menu {
+  display: flex;
+  gap: 90px; /* Increased gap for better sp
+  acing */
+  text-align: center;
+
+  @media (max-width: 768px) {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+
+  &.open {
+    display: flex;
+  }
+}
+
+.menuItem {
+  position: relative;
+
+  .menuTitle {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px; 
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; 
+    transition: transform 0.3s ease;
+
+    @media (max-width: 768px) {
+      display: flex ;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+
+    &::after {
+      content: "▼";
+      font-size: 12px;
+      transition: transform 0.3s ease;
+    }
+  }
+
+  &:hover .menuTitle::after {
+    transform: rotate(180deg);
+  }
+
+  .dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-top: 1px solid #007AC3;
+    min-width: 380px;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    
+    @media (max-width: 768px) {
+      position: relative;
+      width: 100%;
+    }
+  }
+
+  &:hover .dropdown {
+    display: block;
+  }
+
+  .dropdownItem {
+    display: block;
+    padding: 12px;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    color: black;
+    text-decoration: none;
+    display: flex ;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+
+
+    &:hover {
+      background-color: #f1f1f1;
+
+    border-bottom: 2px solid #007AC3;
+    }
+  }
+}

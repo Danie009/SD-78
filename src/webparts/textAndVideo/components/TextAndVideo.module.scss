@@ -1,0 +1,52 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.textAndVideo {
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+}
+
+.textAndVideo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #36346b;
+  color: white;
+  margin-bottom: -5px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.textSection {
+  flex: 1;
+  font-size: 34px;
+  font-weight: bold;
+  margin-left: 105px;
+}
+
+.videoSection {
+  flex: 1;
+  margin-bottom: -4px;
+}
+.videoWrapper iframe {
+  width: 100% !important;
+  height: 320px !important;
+}
+
+.mediaSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}

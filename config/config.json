@@ -1,0 +1,28 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "sd-78-webparts-v-01-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/sd78WebpartsV01/Sd78WebpartsV01WebPart.js",
+          "manifest": "./src/webparts/sd78WebpartsV01/Sd78WebpartsV01WebPart.manifest.json"
+        }
+      ]
+    },
+    "text-and-video-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/textAndVideo/TextAndVideoWebPart.js",
+          "manifest": "./src/webparts/textAndVideo/TextAndVideoWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "Sd78WebpartsV01WebPartStrings": "lib/webparts/sd78WebpartsV01/loc/{locale}.js",
+    "TextAndVideoWebPartStrings": "lib/webparts/textAndVideo/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "sd-78-webparts-v-0-1-client-side-solution",
+    "id": "d2cdb316-c418-4ee1-b08a-f01597282497",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.20.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "SD-78 Webparts V0.1 description"
+      },
+      "longDescription": {
+        "default": "SD-78 Webparts V0.1 description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "sd-78-webparts-v-0-1 Feature",
+        "description": "The feature that activates elements of the sd-78-webparts-v-0-1 solution.",
+        "id": "fcab400d-4b69-434d-9e75-7497e4a5bae9",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/sd-78-webparts-v-0-1.sppkg"
+  }
+}
